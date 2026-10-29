@@ -13,4 +13,7 @@
 
 Cada carpeta tiene los lectores MQL5 (`*_Inspector`, `*_Senales`, `*_Registro`, `*_Repintado`) y los resúmenes por fase. `ftsspike/ea/FTS_Ruptura_Demo.mq5` es el EA de la regla aprobada, **solo para cuenta demo**.
 
-**Aviso honesto:** la regla de FTS Spike se aprobó con simulación en velas M5 y relleno de saltos estimado. El proyecto posterior (`../../README.md`, "las velas pueden mentir") mostró que en estos índices la verificación tick a tick puede cambiar el resultado. Antes de usarla con dinero real hace falta esa verificación y la prueba en demo.
+**Verificación con ticks (29-oct-2026):** en un mes de datos nuevos, la misma regla simulada tick a tick con bid/ask
+reales dio +504 puntos por operación (71,8 % de aciertos, 188 operaciones) frente a +623 con velas: el sesgo de las
+velas aquí es pequeño (−119 pts/op) porque el SL (11.000) es grande frente a los saltos. Mejor que el 84 % de las
+entradas al azar en ese mes. Siguiente paso: prueba en cuenta demo en vivo (`ftsspike/verificacion_ticks/`).

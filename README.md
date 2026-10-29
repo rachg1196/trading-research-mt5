@@ -32,7 +32,7 @@ de datos que se mira una sola vez.
 | 02 | [3 EMAs 30/50/100](proyectos/02_tres_emas_30_50_100) | 615 series, ~135 millones de velas, pruebas unitarias, escáner MQL5 | Sin ventaja |
 | 03 | [EA propio ADX + EMAs](proyectos/03_adx_emas) | Auditoría de 11 versiones de un EA contra el historial real; estructura del índice | La racha fue azar + lote |
 | 04 | [Patrón W y M](proyectos/04_patron_w_m) | Detector, 41 mercados, 3 controles, indicador y EA con escáner | Sin ventaja |
-| 05 | [Analizador de indicadores comerciales](proyectos/05_analizador_indicadores) | Ingeniería inversa de 4 indicadores .ex5 sin código, prueba de repintado tick a tick | 3 sin ventaja; 1 regla pendiente de verificar con ticks |
+| 05 | [Analizador de indicadores comerciales](proyectos/05_analizador_indicadores) | Ingeniería inversa de 4 indicadores .ex5 sin código, prueba de repintado tick a tick | 3 sin ventaja; 1 regla aprobada y verificada con ticks, en prueba demo |
 | 06 | [BreakX 600 con machine learning](proyectos/06_breakx600_machine_learning) | Regresión logística, gradient boosting, validación ciega tick a tick, bot solo-demo | Prototipo, probado solo en demo |
 | 07 | **Investigación multi-mercado** (raíz del repo: `src/`, `mql5/`) | ~100 mercados, 17.882 pruebas, Holm, verificación con ticks, Patrón 123 | Ninguna estrategia pasa |
 
