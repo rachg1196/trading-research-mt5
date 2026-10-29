@@ -1,0 +1,6 @@
+pandas>=2.0
+numpy>=1.26
+numba>=0.60
+scipy>=1.11
+matplotlib>=3.8
+MetaTrader5>=5.0.45  # solo Windows, para descargar datos

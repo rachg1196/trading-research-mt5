@@ -1,0 +1,8 @@
+# datos del broker (no se suben)
+datos/*
+!datos/README.md
+*.csv.gz
+__pycache__/
+*.pyc
+*.ex5
+.venv/

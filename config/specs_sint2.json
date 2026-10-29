@@ -1,0 +1,92 @@
+{
+ "SwitchX600": {
+  "point": 0.01,
+  "ask": 108064.19,
+  "valor_1pct_lote_min": 108.06419000000001,
+  "swap_mode": 1,
+  "swap_long": -500.0,
+  "swap_short": -500.0,
+  "swap_rollover3days": 5,
+  "stops_level": 390
+ },
+ "SwitchX1200": {
+  "point": 0.01,
+  "ask": 102194.24,
+  "valor_1pct_lote_min": 102.19424000000001,
+  "swap_mode": 1,
+  "swap_long": -300.0,
+  "swap_short": -300.0,
+  "swap_rollover3days": 5,
+  "stops_level": 222
+ },
+ "SwitchX1800": {
+  "point": 0.01,
+  "ask": 99557.05,
+  "valor_1pct_lote_min": 99.55705,
+  "swap_mode": 1,
+  "swap_long": -200.0,
+  "swap_short": -200.0,
+  "swap_rollover3days": 5,
+  "stops_level": 132
+ },
+ "BreakX600": {
+  "point": 0.01,
+  "ask": 97686.79,
+  "valor_1pct_lote_min": 97.68679,
+  "swap_mode": 1,
+  "swap_long": -500.0,
+  "swap_short": -500.0,
+  "swap_rollover3days": 5,
+  "stops_level": 390
+ },
+ "BreakX1200": {
+  "point": 0.01,
+  "ask": 104275.74,
+  "valor_1pct_lote_min": 104.27574,
+  "swap_mode": 1,
+  "swap_long": -300.0,
+  "swap_short": -300.0,
+  "swap_rollover3days": 5,
+  "stops_level": 222
+ },
+ "BreakX1800": {
+  "point": 0.01,
+  "ask": 101505.77,
+  "valor_1pct_lote_min": 101.50577000000001,
+  "swap_mode": 1,
+  "swap_long": -200.0,
+  "swap_short": -200.0,
+  "swap_rollover3days": 5,
+  "stops_level": 132
+ },
+ "TrendX600": {
+  "point": 0.01,
+  "ask": 85929.08,
+  "valor_1pct_lote_min": 85.92908,
+  "swap_mode": 1,
+  "swap_long": -500.0,
+  "swap_short": -500.0,
+  "swap_rollover3days": 5,
+  "stops_level": 390
+ },
+ "TrendX1200": {
+  "point": 0.01,
+  "ask": 97752.1,
+  "valor_1pct_lote_min": 97.75210000000001,
+  "swap_mode": 1,
+  "swap_long": -300.0,
+  "swap_short": -300.0,
+  "swap_rollover3days": 5,
+  "stops_level": 222
+ },
+ "TrendX1800": {
+  "point": 0.01,
+  "ask": 103644.0,
+  "valor_1pct_lote_min": 103.644,
+  "swap_mode": 1,
+  "swap_long": -200.0,
+  "swap_short": -200.0,
+  "swap_rollover3days": 5,
+  "stops_level": 132
+ }
+}

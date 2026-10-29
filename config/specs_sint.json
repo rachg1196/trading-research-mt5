@@ -1,0 +1,83 @@
+{
+ "FlipX1": {
+  "point": 0.01,
+  "ask": 110525.0,
+  "valor_1pct_lote_min": 11.0525,
+  "swap_rollover3days": 3,
+  "swap_mode": 1,
+  "swap_long": -100.0,
+  "swap_short": -100.0
+ },
+ "FlipX2": {
+  "point": 0.01,
+  "ask": 112444.0,
+  "valor_1pct_lote_min": 11.2444,
+  "swap_rollover3days": 3,
+  "swap_mode": 1,
+  "swap_long": -150.0,
+  "swap_short": -150.0
+ },
+ "FlipX3": {
+  "point": 0.01,
+  "ask": 104012.0,
+  "valor_1pct_lote_min": 10.401200000000001,
+  "swap_rollover3days": 3,
+  "swap_mode": 1,
+  "swap_long": -200.0,
+  "swap_short": -200.0
+ },
+ "FlipX4": {
+  "point": 0.01,
+  "ask": 84500.0,
+  "valor_1pct_lote_min": 8.45,
+  "swap_rollover3days": 3,
+  "swap_mode": 1,
+  "swap_long": -250.0,
+  "swap_short": -250.0
+ },
+ "FlipX5": {
+  "point": 0.01,
+  "ask": 73260.0,
+  "valor_1pct_lote_min": 7.3260000000000005,
+  "swap_rollover3days": 3,
+  "swap_mode": 1,
+  "swap_long": -300.0,
+  "swap_short": -300.0
+ },
+ "FXVol20": {
+  "point": 0.01,
+  "ask": 121104.2,
+  "valor_1pct_lote_min": 12.11042,
+  "swap_rollover3days": 3,
+  "swap_mode": 5,
+  "swap_long": -2.0,
+  "swap_short": -2.0
+ },
+ "FXVol80": {
+  "point": 0.01,
+  "ask": 61862.24,
+  "valor_1pct_lote_min": 6.186224,
+  "swap_rollover3days": 3,
+  "swap_mode": 5,
+  "swap_long": -8.0,
+  "swap_short": -8.0
+ },
+ "SFXVol20": {
+  "point": 0.01,
+  "ask": 32842.95,
+  "valor_1pct_lote_min": 3.2842949999999997,
+  "swap_rollover3days": 3,
+  "swap_mode": 5,
+  "swap_long": -6.5,
+  "swap_short": -6.5
+ },
+ "BreakX600": {
+  "point": 0.01,
+  "ask": 98129.32,
+  "valor_1pct_lote_min": 98.12932,
+  "swap_rollover3days": 3,
+  "swap_mode": 1,
+  "swap_long": -500.0,
+  "swap_short": -500.0
+ }
+}
