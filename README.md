@@ -20,7 +20,23 @@ tick-level verification). 17,882 strategy tests; none showed a statistically sig
 
 ---
 
-## Qué hace (pipeline de datos)
+## Proyectos de este repositorio
+
+El repositorio reúne 7 proyectos hechos entre agosto y octubre de 2026. Todos siguen el mismo método: plan
+escrito antes de probar, datos de MT5 en solo lectura, costes reales, comparación con el azar y una reserva
+de datos que se mira una sola vez.
+
+| # | Proyecto | Qué tiene de técnico | Resultado |
+|---|---|---|---|
+| 01 | [Patrón RSR/SRS (curso de 37 videos)](proyectos/01_rsr_srs_master_joel) | Transcripción con IA, reglas trazadas a cada video, detector con 47 pruebas, indicador MQL5 | Sin ventaja |
+| 02 | [3 EMAs 30/50/100](proyectos/02_tres_emas_30_50_100) | 615 series, ~135 millones de velas, pruebas unitarias, escáner MQL5 | Sin ventaja |
+| 03 | [EA propio ADX + EMAs](proyectos/03_adx_emas) | Auditoría de 11 versiones de un EA contra el historial real; estructura del índice | La racha fue azar + lote |
+| 04 | [Patrón W y M](proyectos/04_patron_w_m) | Detector, 41 mercados, 3 controles, indicador y EA con escáner | Sin ventaja |
+| 05 | [Analizador de indicadores comerciales](proyectos/05_analizador_indicadores) | Ingeniería inversa de 4 indicadores .ex5 sin código, prueba de repintado tick a tick | 3 sin ventaja; 1 regla pendiente de verificar con ticks |
+| 06 | [BreakX 600 con machine learning](proyectos/06_breakx600_machine_learning) | Regresión logística, gradient boosting, validación ciega tick a tick, bot solo-demo | Prototipo, probado solo en demo |
+| 07 | **Investigación multi-mercado** (raíz del repo: `src/`, `mql5/`) | ~100 mercados, 17.882 pruebas, Holm, verificación con ticks, Patrón 123 | Ninguna estrategia pasa |
+
+## Qué hace el proyecto 07 (pipeline de datos)
 
 | Etapa | Qué se hizo | Archivos |
 |---|---|---|
@@ -73,6 +89,7 @@ mayoría de años positivos y positiva con el spread ×1,5. Tablas completas en 
 ## Estructura
 
 ```
+proyectos/   Proyectos 01-06 (cada uno con su README, código, pruebas e informes)
 src/         Python: extracción, limpieza, motores de señales, backtests, estadística
 mql5/        Indicadores y asesores para MetaTrader 5 (Patron 123 con escáner, Patrón W/M)
 config/      Especificaciones de los símbolos (punto, contrato, swap) leídas de MT5
@@ -95,8 +112,10 @@ python src/global_smc.py resultados 0
 Los datos de mercado no se incluyen (son del bróker); se descargan con los scripts de `src/`.
 
 ## Tecnologías
-Python (pandas, NumPy, numba, SciPy, matplotlib), API MetaTrader5, MQL5, faster-whisper (transcripción de videos
-de estrategias para extraer sus reglas), Git.
+Python (pandas, polars, NumPy, numba, SciPy, scikit-learn, matplotlib, pytest), API MetaTrader5, MQL5,
+faster-whisper (transcripción de videos de estrategias para extraer sus reglas), Git.
+Desarrollado con asistentes de IA (Claude Code) bajo dirección propia: diseño de las pruebas, reglas de
+decisión y revisión de resultados.
 
 ## Aviso
 Proyecto de investigación y aprendizaje. No es asesoría financiera. Los asesores MQL5 vienen con

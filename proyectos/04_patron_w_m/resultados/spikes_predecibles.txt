@@ -1,0 +1,23 @@
+PRUEBA: ¿se pueden anticipar los spikes? (velas M1, datos de desarrollo, solo periodo en vivo)
+Probabilidad (%) de que haya spike en el siguiente minuto, segun los minutos desde el ultimo spike:
+
+Mercado        spikes/dia  min. entre spikes (media / desv)  0-3   3-10  10-30  30-60  60-120
+PainX 400        178.7          8.1 /  7.6                   12.4  12.4  12.4   12.4   11.3
+PainX 600        134.7         10.7 / 10.1                    9.4   9.3   9.4    9.5    9.9
+PainX 800        101.8         14.1 / 13.6                    7.0   7.0   7.1    7.2    7.1
+PainX 999         82.2         17.5 / 17.0                    5.6   5.8   5.7    5.7    5.6
+PainX 1200        69.4         20.8 / 20.3                    4.8   4.8   4.8    4.8    4.9
+GainX 400        178.8          8.1 /  7.5                   12.4  12.4  12.5   12.3   11.6
+GainX 600        135.4         10.6 / 10.1                    9.4   9.4   9.4    9.5    9.9
+GainX 800        102.1         14.1 / 13.6                    7.0   7.1   7.0    7.2    7.0
+GainX 999         82.0         17.6 / 17.2                    5.7   5.7   5.7    5.7    5.6
+GainX 1200        68.8         20.9 / 20.4                    4.8   4.9   4.7    4.8    4.9
+BreakX 1200       69.1         20.8 / 20.2                    4.7   4.8   4.8    4.9    5.0
+BreakX 1800       46.5         30.9 / 30.4                    3.4   3.2   3.2    3.2    3.2
+TrendX 1200       68.7         20.9 / 20.5                    4.8   4.8   4.8    4.8    4.8
+TrendX 1800       47.0         30.6 / 29.8                    3.2   3.2   3.3    3.2    3.4
+SwitchX 1200      68.8         20.9 / 20.6                    4.8   4.8   4.7    4.7    4.8
+SwitchX 1800      46.3         31.1 / 30.6                    3.2   3.2   3.2    3.3    3.2
+
+Conclusion: la probabilidad es la misma pase el tiempo que pase (y la desviacion = la media):
+los spikes llegan al azar ("sin memoria"). El tiempo desde el ultimo spike no sirve para anticipar el siguiente.

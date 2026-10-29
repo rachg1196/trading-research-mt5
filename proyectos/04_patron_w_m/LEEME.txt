@@ -1,0 +1,15 @@
+PROYECTO W y M - Doble/triple piso y techo
+==========================================
+
+Estructura:
+  scripts\          Codigo de cada fase (fase0_..., fase1_..., etc.)
+  datos\historico\  Historico descargado de MT5 (parte de desarrollo)
+  datos\reserva\    Datos fuera de muestra. NO se usan hasta la Fase 7 (con autorizacion).
+  imagenes\         Ejemplos de patrones detectados para revision visual
+  resultados\       Reportes y tablas de cada fase
+  app\              Aplicacion de escritorio (solo si hay ventaja demostrada)
+
+Reglas:
+  - Cuenta real: SOLO LECTURA. Ningun script envia, modifica ni cierra ordenes.
+  - Pruebas de operacion: solo cuenta demo (Fase 9).
+  - Reserva fuera de muestra: se evalua UNA sola vez, con autorizacion de Raul.

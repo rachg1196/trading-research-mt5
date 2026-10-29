@@ -1,0 +1,31 @@
+ANALIZADOR DE INDICADORES - ZEROLAG (Zero Lag MA Trend Levels MT5, Market) - BreakX 600
+=====================================================================================
+Config de Raul (zerolag.set): longitud 10, ATR 200, cierre. Alertas apagadas en todas las pruebas.
+Desarrollo 01/01/2025-20/06/2026 | Reserva 21/06-20/10/2026 (evaluada una sola vez).
+
+QUE ES
+- Linea rapida = EMA "zero lag" (EMA(2*cierre - EMA(cierre,L), L)); linea lenta = EMA(cierre,L).
+  Coincide 100% con el indicador.
+- Cambio de tendencia = cruce de las dos lineas (buffers 14/15).
+- Flechas = REENTRADAS a favor de la tendencia: el precio toca el nivel y es rechazado
+  (compra en tendencia alcista, venta en bajista).
+
+REPINTADO (Probador vela a vela, M5, 22 meses)
+- Flechas: NO repintan (solo aparecen con la vela cerrada).
+- Cambio de tendencia: con la vela abierta aparece y el 23% desaparece al cerrar.
+
+M5 (tu temporalidad), comparado con entradas al azar con las mismas reglas:
+- 1:1 de 8.000-11.000: pierde igual que el azar (aciertos 49-57%).
+- Cuanto recorre a favor antes de ir 10.000 en contra (mediana):
+     cambio de tendencia 9.738 | 1a reentrada 9.634 | 2a+ reentrada 8.964 | AZAR 9.260
+  Llegan a +10.000 antes de -10.000: 49% / 49% / 47% / azar 48%  => moneda al aire.
+- Reentradas: peores que el azar con casi cualquier SL/TP; la 2a y siguientes, claramente peores.
+- Igual en M1, M15, M30 y con longitud 15.
+
+UNICO CANDIDATO (H1, longitud 10, entrar tras el cambio de tendencia, SL 11.000, TP 20.000):
+                     ops   /dia  aciertos  pts/op   $ lote0,1  drawdown  vs azar
+  Desarrollo (18m)   818   1,6    38,9%    +940     +$768      -$300     100%
+  RESERVA (4m)       193   1,6    36,8%    +302     +$58       -$136      76%
+  => NO APRUEBA (necesitaba >=95% frente al azar). Gana poco y no se distingue de la suerte.
+
+CONCLUSION: ZeroLag = SIN VENTAJA DEMOSTRADA en BreakX 600. No se automatiza.

@@ -1,0 +1,22 @@
+FASE 6 - METRICAS DE LA CANDIDATA (desarrollo 01/01/2025 - 20/06/2026, lote 0,1)
+Regla: Quantum M5, entrada en la apertura tras la vela confirmada, TP 8.000, SL 50.000
+==================================================================================
+                               TODAS LAS SEÑALES        UNA A LA VEZ
+Operaciones / por dia          3.536 / 6,7              1.111 / 2,1
+Aciertos                       87,7%                    86,8%
+Ganancia media / perdida media +$8,00 / -$50,16         +$8,00 / -$50,15
+Neto 18 meses (lote 0,1)       +$2.930 (~$166/mes)      +$340 (~$19/mes)
+Meses positivos                14 de 18                 10 de 18
+Peor mes / mejor mes           -$315 / +$489            -$224 / +$273
+Peor racha perdedora           3 seguidas               3 seguidas
+Max drawdown (flotante)        -$718                    -$616
+Posiciones abiertas a la vez   hasta 16                 1
+Duracion operacion             mediana 2,3 h, hasta 3,2 dias
+
+Horario (servidor): de 16:00 a 24:00 las operaciones perdieron en promedio;
+de 0:00 a 16:00 ganaron. Es el mismo indicio de la Fase 4 (no validado).
+
+OJO: con estas mismas reglas, entradas AL AZAR habrian ganado ~+318 pts/op
+(~+$1.125 de los $2.930). Lo que aporta Quantum es la diferencia, y en
+desarrollo esa diferencia fue mejor que el azar en el 96% de las repeticiones.
+Capital minimo razonable con lote 0,1: ~$1.000 (drawdown -$718 + margen).

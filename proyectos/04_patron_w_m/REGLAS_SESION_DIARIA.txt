@@ -1,0 +1,24 @@
+REGLAS ADICIONALES DE RAUL (20-oct-2026) - Sesion diaria
+=========================================================
+
+1. Resultados SIEMPRE separados por mercado (BreakX 600, TrendX 600, SwitchX 600).
+   El robot podra operar en un solo mercado: el que muestre la mayor ventaja.
+
+2. El robot NO opera indefinidamente. Funciona por "sesion diaria":
+   - Hora de inicio configurable (ej. 04:20 hora Ecuador).
+   - Hora de cierre configurable (ej. 22:00 hora Ecuador).
+   - Meta diaria: al llegar a +$30 netos (lote 0.10) se detiene hasta el dia siguiente.
+   - Maximo de operaciones por dia: entre 6 y 10 (configurable).
+   - Propuesta de Claude (a validar con datos): perdida maxima diaria y/o
+     maximo de perdidas seguidas -> se detiene ese dia.
+
+3. Medir si el orden de la operacion en el dia importa (1ra, 2da, 3ra...)
+   y en que horas funciona mejor. Si solo las primeras N funcionan, la regla
+   se adapta a eso ("yo me adapto al mercado, no el mercado a mi").
+
+4. SL/TP salen de los datos (2.000, 3.000, 4.000, 5.000 puntos... lo que digan los datos).
+
+Conversion (de MT5): valor del tick = 0.01 USD por punto con 1 lote.
+   Con lote 0.10: 1.000 puntos = $1  |  5.000 puntos = $5  |  meta $30 = 30.000 puntos netos.
+   Spread tipico 130 puntos = $0.13 por operacion con 0.10.
+Hora del servidor MT5 = hora Ecuador + 8 h (se convierte automaticamente).

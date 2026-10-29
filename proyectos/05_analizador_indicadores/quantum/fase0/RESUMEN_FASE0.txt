@@ -1,0 +1,16 @@
+FASE 0 - QUANTUM (BreakX 600, M5) - 20/10/2026
+=============================================
+Archivo: MQL5\Indicators\QUANTUM Todo Gratis en BOTGRATIS12 Youtube y Telegram.ex5 (10 KB, 08/11/2025)
+NO esta en Market. iCustom funciona y los buffers se leen sin problema.
+Parametros de entrada: ninguno (fijos internamente: 12 y 55).
+Dibuja en subventana 2 lineas (escala 0-12):
+  - "Linea Alcista" verde  = buffer 0
+  - "Liena Bajista" rojo   = buffer 1
+  - buffer 2 (oculto)      = media de referencia
+No dibuja flechas ni objetos.
+
+Lo que calcula (comprobado contra 3000 velas, coincidencia 100%):
+  buffer 2 = media movil SIMPLE de 55 velas del cierre (SMA 55)
+  buffer 0 = cuantas de las ultimas 12 velas cerraron POR ENCIMA de la SMA 55
+  buffer 1 = 12 - buffer 0 (cuantas cerraron por debajo)
+  Cruce de lineas = el momento en que 6 de las ultimas 12 velas estan de cada lado.

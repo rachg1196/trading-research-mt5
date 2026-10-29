@@ -1,0 +1,20 @@
+FASE 7 - PRUEBA UNICA EN LA RESERVA (21/06/2026 - 20/10/2026) - autorizada por Raul
+====================================================================================
+Regla fijada antes de mirar: Quantum M5, entrada confirmada, TP 8.000, SL 50.000,
+todas las señales, spread real. Comparada con 100 conjuntos de entradas al azar.
+
+Operaciones 845 | aciertos 87,6% (740 TP / 105 SL)
++773 pts por operacion | neto +$653 con lote 0,1 en 4 meses | drawdown cerrado -$388
+Meses: jun +$227 | jul +$45 | ago +$33 | sep +$132 | oct +$216
+
+Azar con las mismas reglas: mediana +149 pts/op (p5 -1.095, p95 +1.116);
+el 60% de las repeticiones al azar tambien gano dinero.
+Quantum fue mejor que el azar en el 81% de las repeticiones.
+
+Criterio 1 (gana tras spread): SI
+Criterio 2 (mejor que >=95% del azar): NO (81%)
+=> NO APRUEBA. Quantum queda como "SIN VENTAJA DEMOSTRADA". No se automatiza.
+
+Lectura: la regla TP corto + SL muy amplio gana dinero en BreakX 600 porque el
+precio tiende a regresar, pero eso le pasa igual a entradas al azar. La parte que
+aportaria Quantum no se distingue de la suerte con estos datos.

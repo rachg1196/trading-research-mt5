@@ -1,0 +1,28 @@
+FASE 4 - DIAGNOSTICO (solo datos de desarrollo: 01/01/2025 a 20/06/2026)
+========================================================================
+1) EL MERCADO NO CAMBIO. BreakX 600 se comporta igual todos los meses:
+   rango medio de vela M5 = 2.335-2.396 pts (variacion <3%), sin tendencia
+   (eficiencia diaria 4-7%), igual a todas las horas (2.342-2.401 pts).
+   Julio 2025 no tuvo nada especial (rango 2.369, eficiencia 4,6%).
+
+2) LAS SEÑALES DE QUANTUM NO TIENEN VENTAJA en ninguna temporalidad (M1-H1):
+   - Tras la señal el precio va a favor o en contra casi por igual (|t|<2).
+   - Operar de cruce a cruce pierde en las 10 temporalidades probadas, igual o
+     peor que entrar al azar (el azar fue mejor en 54%-98% de las repeticiones).
+
+3) TP 5.000 SIN SL (regla original del usuario), señales M5:
+                         % llega al TP   MAE p50   MAE p90   MAE p99   MAE max
+   Quantum confirmada        98,4%        5.242    40.049   253.061   561.845 pts
+   Quantum apenas cruza      98,6%        3.912    35.315   252.413   559.879 pts
+   ENTRADAS AL AZAR (60x)    98,2%        ~5.000   ~44.000  ~290.000  ~560.000 pts
+   => El 98% de aciertos lo da la regla "TP corto sin SL", no Quantum.
+   => El resultado total depende de unas pocas operaciones que se van muy en
+      contra: el azar va de -1,27M a +5,61M pts (p5-p95). Quantum quedo en el
+      percentil 87-92: NO es diferencia significativa.
+   => 1 de cada 10 señales llega a ir 40.000 pts en contra .
+      La peor: 561.845 pts (=$5.618 por lote).
+
+CONCLUSION: los buenos resultados de Quantum se explican por la regla "TP corto sin SL",
+que da muchos aciertos con cualquier entrada, no por el indicador.
+Unico indicio a vigilar: de 20:00 a 24:00 (hora del servidor) las señales fueron
+claramente peores (t=-3,0). Con 6 franjas probadas, puede ser casualidad.

@@ -1,0 +1,49 @@
+FASE 3 - PRUEBA RAPIDA (W y M contra el azar, despues de costes)
+==================================================================
+Datos: desarrollo, 16-jun-2025 a 8-may-2026 (antes de junio la historia tiene volumen y spread 0).
+Mercados: BreakX 600, TrendX 600, SwitchX 600. Temporalidades: M1 a H1 (H2+ casi no hay patrones).
+Coste: spread 130 puntos por operacion (el actual).
+
+Como se midio
+-------------
+- Entrada: apertura de la vela siguiente a la ruptura del cuello. W = compra, M = venta.
+- Salida: TP = SL = k x ATR (k = 1, 2, 3). Maximo 100 velas.
+- Simulacion vela a vela en M1. Si un SALTO atraviesa el SL, se llena donde cae el salto (realista).
+- Se compara con 3 controles con las mismas reglas de salida:
+    ruptura simple (rompe maximo/minimo de 10 velas), seguir la ultima vela, entrada al azar.
+- R = ganancia medida en "riesgos" (1 R = distancia al SL). R medio > 0 = gana dinero.
+
+Como se mueven estos mercados (M1)
+----------------------------------
+- El precio avanza en linea recta unos 3 puntos de precio por minuto (300 "puntos").
+- ~5.6 saltos por hora (uno cada ~10.7 min), de ~28-31 de precio, casi siempre EN CONTRA
+  del tramo que venia (94-97%).
+- Por eso las estrategias de seguir la tendencia aciertan 60-65% de las veces y aun asi pierden:
+  las ganancias son pequenas y constantes, las perdidas llegan de golpe con el salto.
+  (Es lo que te paso con el TP de 10.000 que llego a 9.900 y se devolvio.)
+
+Resultados (k = 2)
+------------------
+- M1 a M5 (donde hay suficientes operaciones por dia): R medio NEGATIVO en los 3 mercados,
+  aunque el % de aciertos sea 51-64%. Ejemplos: SwitchX M1 -0.18 R (64% aciertos, 12.6/dia);
+  BreakX M2 -0.12 R; TrendX M3 -0.01 R.
+- La W/M no supera a una ruptura simple ni a "seguir la ultima vela": todas se comportan igual.
+  O sea, lo que se ve tras una W/M es la inercia normal del mercado, no algo propio del patron.
+- M6 a H1: algunos valores ligeramente positivos (+0.02 a +0.14 R), pero:
+    * ninguno es estadisticamente distinto de cero (de 108 combinaciones, solo 1 con z>2,
+      lo esperable por casualidad; ninguna con z>3);
+    * hay pocas operaciones (0.2 a 2 por dia);
+    * en dinero, con lote 0.10, el mejor caso ronda $0.5-$0.8 por dia, lejos de $30.
+
+Veredicto
+---------
+SIN VENTAJA DEMOSTRADA para el patron W/M basico despues de costes.
+En las temporalidades con frecuencia suficiente (M1-M5) pierde; en M6-H1 hay solo indicios
+debiles que no se distinguen del azar y que darian muy poco dinero.
+Segun las reglas del proyecto, lo correcto es parar aqui y NO construir la aplicacion.
+La reserva (9-may-2026 a hoy) sigue sin abrir.
+
+Sobre el TP "inteligente"
+-------------------------
+Cambiar el TP/SL cambia la FORMA de los resultados (mas aciertos pequenos o menos aciertos
+grandes), pero no convierte una esperanza negativa en positiva. Con k=1, 2 y 3 el signo es el mismo.

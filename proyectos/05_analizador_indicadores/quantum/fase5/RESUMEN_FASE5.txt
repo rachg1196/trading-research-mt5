@@ -1,0 +1,37 @@
+FASE 5 - MAPA SL/TP BASADO EN DATOS (desarrollo: 01/01/2025 - 20/06/2026)
+=========================================================================
+Como es BreakX 600 por dentro (visto en las velas M1):
+  - El precio avanza a velocidad constante (~295 pts/minuto) en una direccion.
+  - Cada cierto tiempo da un SALTO instantaneo en contra de ~2.000-4.000 pts.
+  - Por eso un SL pequeño NO se cierra en el SL: se cierra donde cae el salto.
+    La simulacion usa ese relleno real (peor que el SL), el spread de cada vela
+    (y aparte 130 pts fijos), y compara cada combinacion con 100 conjuntos de
+    entradas al AZAR con las mismas reglas.
+  - La entrada "apenas cruza" se simulo con el precio en curso (incluye las
+    señales que luego desaparecen: 4.016 entradas vs 3.536 confirmadas).
+
+Resultado (M5 confirmada; M1, M15 y "apenas cruza" dan lo mismo):
+  - Con CUALQUIER SL de 2.000 a 15.000 pts: PIERDE en todas las combinaciones
+    (-25 a -350 pts por operacion). Con TP pequeño pierde menos que el azar,
+    pero sigue perdiendo.
+  - Solo da positivo con SL enorme (>=50.000) o sin SL... y ahi el AZAR TAMBIEN
+    da positivo (el precio de BreakX tiende a volver). Ejemplo TP 8.000 sin SL:
+    Quantum +2.349 pts/op, azar mediana +1.336, azar p95 +2.296.
+  - De 378 combinaciones probadas, las que superan al azar >=95% y ganan son 10,
+    todas sin SL o con SL 50.000. Con tantas pruebas, ~19 saldrian por suerte.
+
+El precio del 9 de cada 10 (TP 5.000):
+  SL     toca el SL   de esas se habrian recuperado
+  2.000     68%            95%
+  5.000     51%            94%
+  11.000    32%            90%
+  25.000    16%            80%
+  50.000     8%            61%
+  sin SL: 113 de 3.536 señales (3,2%) no se recuperaron en 7 dias,
+          perdida media -104.276 pts cada una (= 21 TP de 5.000).
+
+Candidata UNICA para la reserva (la mejor con SL definido, decidida AHORA):
+  M5, entrada confirmada, TP 8.000, SL 50.000
+  Desarrollo: 87,7% aciertos, +8.000 / -50.160, +829 pts/op, mejor que el
+  azar en el 96% de las repeticiones (t=2,58). Una perdida = 6,3 ganancias.
+Criterio de aprobado en la reserva: pts/op > 0 tras spread Y mejor que >=95% del azar.

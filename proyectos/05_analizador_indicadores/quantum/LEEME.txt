@@ -1,0 +1,13 @@
+ANALIZADOR DE INDICADORES - QUANTUM
+===================================
+Indicador: QUANTUM Todo Gratis en BOTGRATIS12 Youtube y Telegram.ex5
+Terminal:  MT5 Weltrade (datos: ...\MetaQuotes\Terminal\CF89AB30ACB6DA0DBA14DA647C3517F8)
+Ubicacion: MQL5\Indicators\ (raiz, NO esta en Market)
+
+Reglas del proyecto:
+- Solo lectura en la cuenta REAL. Nunca enviar/modificar/cerrar ordenes.
+- No se descompila el indicador: solo se lee lo que muestra (buffers, flechas, objetos).
+- Reserva de datos fuera de muestra: se evalua UNA sola vez, con autorizacion de Raul.
+
+Fase 0: script AI_Quantum_Inspector.mq5 (en MQL5\Scripts\AnalizadorIndicadores\)
+         -> resultados en MQL5\Files\AnalizadorIndicadores\ y copia aqui.

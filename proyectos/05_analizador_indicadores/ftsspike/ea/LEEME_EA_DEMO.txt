@@ -1,0 +1,21 @@
+FTS_Ruptura_Demo - EA de la regla validada (FTS Spike, ruptura de linea, BreakX 600 M5)
+======================================================================================
+Instalado en: MQL5\Experts\AnalizadorIndicadores\FTS_Ruptura_Demo (cuenta DEMO)
+Grafico: BreakX 600, M5. Trading algoritmico: activado (solo en la demo).
+
+Que hace
+- Toma las flechas de FTS SPIKE que siguen visibles 11 velas despues (ya no repintan).
+- Linea naranja = linea valida para operar; gris = no valida (pendiente en contra).
+- Toca la linea de arriba bajista -> COMPRA. Toca la de abajo alcista -> VENTA.
+- SL 11.000 / TP 5.000 puntos, lote 0,10, cierre a mercado a las 48 h. Numero magico 600511.
+- Aviso: ventana + sonido + notificacion al celular (si tienes MetaQuotes ID configurado en
+  Herramientas > Opciones > Notificaciones).
+- Registro: MQL5\Files\AnalizadorIndicadores\fts_ruptura_demo_log.csv
+
+Seguridad
+- Si la cuenta es REAL, no arranca, y si cambias a real con el EA puesto, se quita solo.
+- Solo funciona en BreakX 600 M5.
+
+Para que funcione: la PC encendida y MT5 abierto (no dormir/suspender).
+Que esperar: ~7 operaciones/dia, ~71% aciertos, +$5 / -$11 por operacion con lote 0,10.
+Revision recomendada: a las 2-4 semanas (unas 100-200 operaciones) comparar contra la simulacion.

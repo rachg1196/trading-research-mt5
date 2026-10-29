@@ -1,0 +1,11 @@
+ZEROLAG - VARIANTES PEDIDAS POR RAUL (M5, L10, SL=TP=10.000, desarrollo)
+Reentradas compra        2027 ops  48,8%  -328 pts/op
+Reentradas venta         2006 ops  47,9%  -510 pts/op
+Reentradas a favor H1    1938 ops  48,4%  -410 pts/op
+Reentradas contra H1     2095 ops  48,3%  -426 pts/op
+Venta a favor H1          987 ops  47,8%  -529 pts/op
+Compra a favor H1         951 ops  49,0%  -287 pts/op
+Cruce compra             5138 ops  49,5%  -178 pts/op
+Cruce venta              5139 ops  48,8%  -321 pts/op
+AZAR                     3000 ops  49,7%  -149 pts/op
+Ninguna variante mejora al azar.

@@ -1,0 +1,23 @@
+ANALIZADOR DE INDICADORES - BLACK EAGLE (Botgratis12 V1, gratuito) - BreakX 600
+==============================================================================
+Desarrollo 01/01/2025-20/06/2026. Alertas apagadas en todas las pruebas.
+
+QUE ES
+- Sin parametros de calculo (solo alertas). Dos buffers: flecha de VENTA (morada, sobre el maximo)
+  y flecha de COMPRA (azul, bajo el minimo). Siempre alternan: compra, venta, compra...
+- Es un indicador de giro que llega tarde: la compra sale cuando el precio ya subio ~8.000 pts
+  en la ultima hora; la venta, cuando ya bajo ~7.600.
+- M5: ~2,6 compras y 2,6 ventas por dia.
+
+REPINTADO (Probador vela a vela, M5, 22 meses)
+- Velas cerradas: NO repinta. 3.462 flechas en vivo = 3.462 en el historico (100%).
+- Vela abierta: ~22-23% de las flechas que aparecen durante la vela desaparecen al cerrar.
+
+VENTAJA (comparado con 40-60 conjuntos de entradas al azar, mismas reglas)
+- Operar de flecha a flecha (reversa): pierde en las 9 temporalidades (M1-H4).
+- SL/TP 8.000 en M5: 48,3% aciertos, -354 pts/op (azar -152).
+- Unica zona que parecia buena: M30 con TP grande. NO es estable:
+    ene-sep 2025: pierde | sep 2025-jun 2026: gana. M12 y H2 pierden; M20 mixto.
+  => No pasa el filtro de robustez; no se gasta la reserva en ella.
+
+CONCLUSION: Black Eagle = SIN VENTAJA DEMOSTRADA en BreakX 600. No se automatiza.

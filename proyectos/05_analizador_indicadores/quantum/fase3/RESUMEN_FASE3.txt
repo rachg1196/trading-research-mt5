@@ -1,0 +1,19 @@
+FASE 3 - ¿REPINTA QUANTUM? (BreakX 600, julio 2025, Probador tick a tick con ticks reales)
+=========================================================================================
+EA lector AI_Quantum_Repintado.mq5 (no opera). Lee Quantum en cada tick y anota lo que se veia.
+
+1) Velas CERRADAS: NO REPINTA.
+   M5: 8.867 velas, 196 señales -> 100% identicas en vivo y en el historico.
+   M1: 44.579 velas, 977 señales -> 100% identicas.
+
+2) Vela EN FORMACION: SI cambia (normal, usa el cierre que aun se mueve).
+   M5: de 224 cruces vistos durante la vela, 28 (12%) desaparecieron al cerrar.
+   M1: de 1.053 cruces vistos durante la vela, 76 (7%) desaparecieron al cerrar.
+   El cruce casi siempre aparece desde el primer tick de la vela (mediana 0 s),
+   porque al abrir vela nueva sale del conteo la vela de hace 12.
+
+Consecuencia para las pruebas:
+   - Entrada "segura": en la apertura de la vela siguiente al cierre de la señal.
+   - Entrada "apenas cruza" (como operaba Raul): ~1 vela antes, pero ~1 de cada 8-14
+     entradas en M5/M1 seria una señal que luego desaparece.
+   Ambas se compararan en la Fase 5.

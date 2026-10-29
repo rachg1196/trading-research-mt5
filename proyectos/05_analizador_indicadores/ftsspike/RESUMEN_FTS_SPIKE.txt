@@ -1,0 +1,35 @@
+ANALIZADOR DE INDICADORES - FTS SPIKE (Period 9, Otstup 30) - BreakX 600 M5
+=========================================================================
+Metodo de Raul: linea de tendencia por las 2 ultimas flechas rojas (maximos) y por las 2
+ultimas azules (minimos); al tocar la linea (basta la mecha) entra a favor del canal.
+
+1) REPINTADO (Probador vela a vela, 22 meses)
+   - El 77% de las flechas que aparecen en vivo DESAPARECEN despues (casi siempre a la vela siguiente).
+   - De las que se quedan, la mitad se pinta 1-8 velas TARDE (hasta 40 min).
+   => En el grafico pasado las lineas se ven perfectas; en vivo eran otras.
+
+2) TU METODO (rebote, SL=TP=5.000), desarrollo ene-25/jun-26:
+                                   ops     aciertos   pts/op   vs azar
+   Mirando el grafico despues      5.545     63,9%    +1.333    100%   <- ilusion por repintado
+   Como se veia en vivo           21.891     47,7%      -320    peor que el 90%
+   Solo flechas confirmadas        3.709     44,4%      -658    peor que el 100%
+
+3) LO QUE SI FUNCIONA: la RUPTURA de esa misma linea (lo contrario)
+   Regla fija (decidida antes de mirar la reserva):
+   - M5. Lineas solo con flechas que siguen visibles 10 velas despues (ya no repintan).
+   - Linea de arriba BAJISTA (2 ultimas rojas): si el precio la toca -> COMPRA (ruptura).
+   - Linea de abajo ALCISTA (2 ultimas azules): si el precio la toca -> VENTA (ruptura).
+   - Cada linea se usa una sola vez. SL 11.000, TP 5.000. Cierre a mercado a los 2 dias.
+                      ops   /dia  aciertos  pts/op  $ lote 0,1  drawdown  meses+   vs azar
+   Desarrollo 18m    3.718   7,0    71,3%    +360    +$1.337     -$280    14/18     100%
+   RESERVA 4m          853   7,1    71,3%    +361      +$308     -$128     4/5       99%
+   => APRUEBA (gana tras spread de 130 y supera al azar en >=95%).
+   Comprobado tambien en version estricta (flechas exactas vistas a las 10 velas y
+   peor precio de entrada si el precio salta la linea): mismo resultado.
+
+OJO
+- Cada perdida (-11.000) equivale a ~2,2 ganancias (+5.000). Necesita ~71% de aciertos para
+  ganar; con 67% o menos ya no gana.
+- Con lote 0,1: ~$+0,36 por operacion, ~$75/mes. Drawdown historico ~-$280 -> capital minimo
+  razonable ~$700-1.000 por cada 0,1 de lote.
+- Siguiente paso obligatorio: Fase 9 -> probar en CUENTA DEMO en vivo antes de dinero real.

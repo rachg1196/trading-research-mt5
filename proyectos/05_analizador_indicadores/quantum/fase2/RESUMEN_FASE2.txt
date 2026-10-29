@@ -1,0 +1,13 @@
+FASE 2 - SEÑALES DE QUANTUM EN BREAKX 600 (01/01/2025 a 20/10/2026)
+====================================================================
+Script: AI_Quantum_Senales.mq5 (solo lectura). Carga Quantum con iCustom
+en las 21 temporalidades de MT5 y guarda sus 3 lineas en cada vela.
+Señal = cruce de lineas en vela CERRADA (verde cruza arriba = COMPRA,
+roja cruza arriba = VENTA). La entrada seria en la apertura de la vela siguiente.
+
+Verificacion: en las 21 temporalidades, los valores del indicador coinciden
+100% con la formula SMA(55) + conteo de 12 velas. 
+
+Señales por dia (aprox):  M1 32 | M2 17 | M3 11 | M4 8.5 | M5 6.7 | M6 5.6
+  M10 3.4 | M12 2.8 | M15 2.2 | M20 1.7 | M30 1.1 | H1 0.6 | H4 0.1
+Archivos: senales_<TF>.csv (una fila por señal).
