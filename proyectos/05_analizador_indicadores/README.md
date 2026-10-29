@@ -17,3 +17,7 @@ Cada carpeta tiene los lectores MQL5 (`*_Inspector`, `*_Senales`, `*_Registro`, 
 reales dio +504 puntos por operación (71,8 % de aciertos, 188 operaciones) frente a +623 con velas: el sesgo de las
 velas aquí es pequeño (−119 pts/op) porque el SL (11.000) es grande frente a los saltos. Mejor que el 84 % de las
 entradas al azar en ese mes. Siguiente paso: prueba en cuenta demo en vivo (`ftsspike/verificacion_ticks/`).
+
+**Probador de MT5 con ticks reales (EA real, indicador repintando en vivo), ene-oct 2026:** 2.085 operaciones,
+70,3 % de aciertos, +490 USD con lote 0,1 sobre 1.000 USD, factor de beneficio 1,07, caída máxima 12,7 %.
+Positiva, pero con margen pequeño: la mayor parte de la ganancia llegó en ene-mar 2026.
